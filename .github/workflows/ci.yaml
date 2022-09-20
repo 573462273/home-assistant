@@ -868,7 +868,7 @@ jobs:
           coverage report --fail-under=94
           coverage xml
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v2.1.0
+        uses: codecov/codecov-action@v3.1.1
 
   coverage-partial:
     name: Process partial test coverage
@@ -901,6 +901,6 @@ jobs:
           coverage combine coverage*/.coverage*
           coverage xml
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v2.1.0
+        uses: codecov/codecov-action@v3.1.1
         with:
           flags: partial
